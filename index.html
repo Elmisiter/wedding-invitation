@@ -2,530 +2,652 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#850e32">
-  <meta name="description"
-        content="دعوة زفاف موسى بلطرش — ٢١ نوفمبر ٢٠٢٦ — قاعة الحفلات النخيل، الطاهير، جيجل">
-  <title>دعوة زفاف موسى بلطرش</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f8f1e8">
+<meta name="description" content="دعوة زفاف موسى بلطرش — 21 نوفمبر 2026">
+<title>دعوة زفاف موسى بلطرش</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --wine: #850e32;
-      --wine-deep: #590c25;
-      --cream: #fff8ef;
-      --paper: #f3e6d9;
-      --gold: #cba76a;
-      --ink: #4c2631;
-      --muted: #755c62;
-      --line: #dfc8b4;
-      --body: "Noto Naskh Arabic", serif;
-      --display: "Amiri", serif;
-    }
+<style>
+:root {
+  --ivory:#fffaf3;
+  --paper:#f3e8db;
+  --gold:#b28a4e;
+  --dark:#41362e;
+  --muted:#746557;
+  --wine:#751d39;
+  --border:#d9c5a5;
+}
+* {box-sizing:border-box}
+[hidden] {display:none!important}
+html {scroll-behavior:smooth}
+body {
+  margin:0;
+  background:#e9e0d5;
+  color:var(--dark);
+  font-family:"Noto Naskh Arabic",serif;
+  font-size:19px;
+  line-height:1.9;
+}
+button,a {-webkit-tap-highlight-color:transparent}
+button {font:inherit}
+a:focus-visible,button:focus-visible {
+  outline:3px solid var(--gold);
+  outline-offset:6px;
+}
+.site {
+  max-width:680px;
+  margin:auto;
+  overflow:hidden;
+  background:var(--ivory);
+  box-shadow:0 0 70px #44301b18;
+}
+.cover {
+  min-height:100svh;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  padding:50px 28px;
+  background:
+    radial-gradient(ellipse at 0 0,#dbc5a470,transparent 60%),
+    radial-gradient(ellipse at 100% 100%,#dbc5a460,transparent 60%),
+    var(--ivory);
+  transition:opacity .4s ease;
+}
+.cover.leaving {opacity:0;pointer-events:none}
+.cover-inner {width:100%}
+.small-title {
+  font-family:"Amiri",serif;
+  font-size:30px;
+  margin:0 0 30px;
+}
+.envelope {
+  position:relative;
+  width:100%;
+  max-width:400px;
+  height:265px;
+  padding:0;
+  margin:auto;
+  display:block;
+  border:1px solid #cdb28e;
+  border-radius:7px;
+  background:#e6d4bc;
+  box-shadow:0 20px 45px #5e452824;
+  cursor:pointer;
+  perspective:1000px;
+}
+.letter {
+  position:absolute;
+  inset:16px;
+  background:var(--ivory);
+  border:1px solid var(--border);
+  display:grid;
+  place-items:center;
+  font-family:"Amiri",serif;
+  color:var(--wine);
+  font-size:30px;
+  transition:transform .7s ease;
+}
+.front {
+  position:absolute;
+  inset:0;
+  background:#eadcc9;
+  clip-path:polygon(0 0,50% 55%,100% 0,100% 100%,0 100%);
+  z-index:2;
+  border-radius:7px;
+}
+.flap {
+  position:absolute;
+  inset:0 0 auto;
+  height:56%;
+  background:#f2e5d4;
+  clip-path:polygon(0 0,100% 0,50% 100%);
+  transform-origin:top;
+  backface-visibility:hidden;
+  transition:transform .7s ease;
+  z-index:3;
+}
+.seal {
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:76px;
+  height:76px;
+  display:grid;
+  place-items:center;
+  background:var(--wine);
+  border:5px double #c7a66e;
+  border-radius:50%;
+  color:#f8e3bd;
+  font-family:"Amiri",serif;
+  font-size:37px;
+  box-shadow:0 5px 14px #30101b33;
+  z-index:4;
+  transition:opacity .25s ease;
+}
+.opening .flap {transform:rotateX(180deg)}
+.opening .seal {opacity:0}
+.opening .letter {transform:translateY(-45px)}
+.tap-text {margin:28px 0 4px;font-size:23px}
+.cover-date {margin:0;color:var(--muted)}
 
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      background: #eee4df;
-      color: var(--ink);
-      font-family: var(--body);
-      font-size: 18px;
-      line-height: 1.9;
-    }
-
-    button, a { -webkit-tap-highlight-color: transparent; }
-
-    button { font: inherit; }
-
-    button:focus-visible, a:focus-visible {
-      outline: 3px solid var(--gold);
-      outline-offset: 6px;
-    }
-
-    [hidden] { display: none !important; }
-
-    .shell {
-      max-width: 600px;
-      min-height: 100svh;
-      margin-inline: auto;
-      background: var(--cream);
-      box-shadow: 0 0 60px #4c263115;
-    }
-
-    /* Opening envelope */
-
-    .cover {
-      min-height: 100svh;
-      padding: 36px 24px;
-      display: grid;
-      place-items: center;
-      text-align: center;
-      background: var(--paper);
-      transition: opacity .45s ease, transform .45s ease;
-    }
-
-    .cover.leaving {
-      opacity: 0;
-      transform: scale(1.025);
-      pointer-events: none;
-    }
-
-    .cover-content { width: 100%; }
-
-    .cover-heading {
-      margin: 0 0 28px;
-      font-family: var(--display);
-      font-size: 30px;
-      font-weight: 400;
-    }
-
-    .envelope {
-      position: relative;
-      display: block;
-      width: 100%;
-      max-width: 390px;
-      height: 270px;
-      margin: auto;
-      padding: 0;
-      border: 1px solid #d7bca9;
-      border-radius: 8px;
-      cursor: pointer;
-      background: #e8d5c4;
-      box-shadow: 0 20px 45px #5a263024;
-      perspective: 1000px;
-      isolation: isolate;
-    }
-
-    .letter {
-      position: absolute;
-      inset: 18px;
-      display: grid;
-      place-items: center;
-      background: var(--cream);
-      color: var(--wine);
-      font-family: var(--display);
-      font-size: 30px;
-      transition: transform .7s ease;
-      border: 1px solid var(--line);
-    }
-
-    .envelope-front {
-      position: absolute;
-      inset: 0;
-      z-index: 2;
-      background: #eddbca;
-      clip-path: polygon(0 0, 50% 52%, 100% 0, 100% 100%, 0 100%);
-      border-radius: 8px;
-    }
-
-    .flap {
-      position: absolute;
-      inset: 0 0 auto;
-      height: 56%;
-      z-index: 3;
-      background: #f5e6d7;
-      clip-path: polygon(0 0, 100% 0, 50% 100%);
-      transform-origin: top;
-      transition: transform .7s ease;
-      backface-visibility: hidden;
-    }
-
-    .seal {
-      position: absolute;
-      left: 50%;
-      top: 49%;
-      z-index: 4;
-      display: grid;
-      place-items: center;
-      width: 76px;
-      height: 76px;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-      border: 5px double #b88b49;
-      background: var(--wine);
-      box-shadow: 0 5px 12px #46122330;
-      color: #f8dfaf;
-      font-family: var(--display);
-      font-size: 36px;
-      transition: opacity .25s ease;
-    }
-
-    .envelope.opening .flap { transform: rotateX(180deg); }
-    .envelope.opening .seal { opacity: 0; }
-    .envelope.opening .letter { transform: translateY(-48px); }
-
-    .open-label { margin: 32px 0 4px; font-size: 22px; }
-    .cover-date { margin: 0; color: var(--muted); }
-
-    /* Invitation */
-
-    .invitation { animation: reveal .7s ease both; }
-
-    @keyframes reveal {
-      from { opacity: 0; transform: translateY(16px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .hero {
-      min-height: 88svh;
-      display: grid;
-      align-content: center;
-      padding: 72px 28px;
-      text-align: center;
-      background: var(--wine);
-      color: var(--cream);
-      position: relative;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 20px;
-      border: 1px solid #cba76a80;
-      pointer-events: none;
-    }
-
-    .eyebrow {
-      margin: 0;
-      color: #efd3a2;
-      font-size: 21px;
-    }
-
-    .basmala {
-      font-family: var(--display);
-      font-size: clamp(25px, 5vw, 34px);
-      margin: 12px 0 32px;
-    }
-
-    .ornament {
-      width: 96px;
-      height: 1px;
-      margin: 28px auto;
-      background: var(--gold);
-    }
-
-    h1 {
-      font-family: var(--display);
-      font-size: clamp(45px, 10vw, 70px);
-      line-height: 1.6;
-      font-weight: 400;
-      margin: 12px 0;
-    }
-
-    .hero-date { margin: 0; font-size: 25px; }
-    .hero-location { margin: 16px 0 0; color: #f1dcd8; }
-    .scroll-note { margin: 36px 0 0; font-size: 16px; color: #efd3a2; }
-
-    section.content {
-      padding: 60px 28px;
-      text-align: center;
-    }
-
-    h2 {
-      margin: 0 0 20px;
-      font-family: var(--display);
-      font-size: clamp(30px, 6vw, 40px);
-      font-weight: 400;
-      line-height: 1.6;
-    }
-
-    .intro-text {
-      font-size: 25px;
-      max-width: 360px;
-      margin: auto;
-      line-height: 2.1;
-    }
-
-    .signature {
-      color: var(--wine);
-      font-family: var(--display);
-      font-size: 31px;
-      margin: 24px 0 0;
-    }
-
-    .count-section {
-      background: #f0e2d5;
-      border-block: 1px solid var(--line);
-    }
-
-    .countdown {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 8px;
-      max-width: 420px;
-      margin: 28px auto 0;
-    }
-
-    .count-box {
-      padding: 16px 4px;
-      background: var(--cream);
-      border: 1px solid #e2cdb8;
-      border-radius: 8px;
-    }
-
-    .count-box strong {
-      display: block;
-      color: var(--wine);
-      font-size: clamp(25px, 6vw, 36px);
-      line-height: 1.4;
-      font-variant-numeric: tabular-nums;
-    }
-
-    .count-box span { font-size: 16px; }
-
-    .venue {
-      background: var(--wine);
-      color: var(--cream);
-    }
-
-    .venue h2 { color: #efd3a2; }
-    .venue-name { font-size: 30px; margin: 0; }
-    .venue-address { font-size: 23px; margin: 8px 0 24px; }
-
-    .button {
-      display: inline-flex;
-      min-height: 52px;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 28px;
-      border: 1px solid var(--gold);
-      border-radius: 6px;
-      color: var(--wine-deep);
-      background: #efd7ab;
-      text-decoration: none;
-      font-size: 20px;
-      transition: background .2s ease, transform .2s ease;
-    }
-
-    .button:hover { background: #f9e9cb; }
-    .button:active { transform: scale(.98); }
-
-    .contact-text {
-      max-width: 350px;
-      margin: 0 auto 24px;
-      color: var(--muted);
-      font-size: 21px;
-    }
-
-    .contact .button {
-      background: var(--wine);
-      color: var(--cream);
-      border-color: var(--wine);
-    }
-
-    footer {
-      padding: 28px 24px 40px;
-      text-align: center;
-      color: var(--muted);
-      border-top: 1px solid var(--line);
-      font-size: 17px;
-    }
-
-    footer p { margin: 4px 0; }
-
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      *, *::before, *::after {
-        animation: none !important;
-        transition: none !important;
-      }
-    }
-  </style>
+main {animation:appear .7s ease both}
+@keyframes appear {
+  from {opacity:0;transform:translateY(12px)}
+  to {opacity:1;transform:translateY(0)}
+}
+.hero {
+  position:relative;
+  text-align:center;
+  padding:50px 24px 35px;
+  background:
+    radial-gradient(ellipse at 50% 35%,#fffdf9 20%,#f1e3d0 100%);
+}
+.hero::before {
+  content:"";
+  position:absolute;
+  inset:16px;
+  border:1px solid #b28a4e80;
+  border-radius:220px 220px 8px 8px;
+  pointer-events:none;
+}
+.hero-content {position:relative}
+.basmala {
+  font-family:"Amiri",serif;
+  font-size:clamp(26px,5vw,36px);
+  margin:10px 0 12px;
+}
+.eyebrow {margin:0;color:var(--gold);font-size:23px}
+h1 {
+  font-family:"Amiri",serif;
+  font-size:clamp(43px,9vw,68px);
+  font-weight:400;
+  line-height:1.5;
+  margin:8px 0;
+  color:var(--wine);
+}
+.date {margin:0;font-size:25px}
+.couple {
+  display:block;
+  width:min(100%,350px);
+  height:auto;
+  margin:12px auto 0;
+}
+.scroll-note {
+  margin:8px 0 10px;
+  font-size:16px;
+  color:var(--muted);
+}
+.section {
+  position:relative;
+  padding:48px 28px;
+  text-align:center;
+}
+h2 {
+  margin:0 0 20px;
+  font-family:"Amiri",serif;
+  font-weight:400;
+  font-size:clamp(31px,6vw,42px);
+  line-height:1.6;
+}
+.welcome {
+  background:linear-gradient(#f1e3d0,var(--ivory) 50%);
+}
+.welcome p {
+  max-width:390px;
+  margin:0 auto;
+  font-size:25px;
+  line-height:2.1;
+}
+.divider {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+  color:var(--gold);
+  margin:24px auto;
+}
+.divider::before,.divider::after {
+  content:"";
+  width:65px;
+  height:1px;
+  background:var(--border);
+}
+.signature {
+  font-family:"Amiri",serif;
+  color:var(--wine);
+}
+.count-section {
+  background:linear-gradient(var(--ivory),#efe2d1,var(--ivory));
+}
+.countdown {
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:10px;
+  max-width:440px;
+  margin:24px auto 0;
+}
+.count-box {
+  background:#fffcf7;
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:18px 4px;
+  box-shadow:0 6px 15px #6d54200a;
+}
+.count-box strong {
+  display:block;
+  font-family:Georgia,serif;
+  font-size:clamp(26px,6vw,38px);
+  color:var(--wine);
+  line-height:1.4;
+  font-variant-numeric:tabular-nums;
+}
+.count-box span {font-size:17px}
+.venue-section {padding-top:35px}
+.venue-card {
+  position:relative;
+  overflow:hidden;
+  min-height:340px;
+  border:1px solid var(--border);
+  border-radius:130px 130px 12px 12px;
+  display:grid;
+  place-items:center;
+  background:var(--paper);
+}
+.venue-photo {
+  position:absolute;
+  inset:0;
+  background-size:cover;
+  background-position:center;
+}
+.venue-photo.has-photo::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:#fff8eae0;
+}
+.venue-content {
+  position:relative;
+  padding:40px 18px;
+  z-index:1;
+}
+.venue-name {
+  font-size:31px;
+  font-family:"Amiri",serif;
+  margin:0;
+}
+.venue-address {font-size:24px;margin:8px 0 24px}
+.button {
+  display:inline-flex;
+  min-height:52px;
+  align-items:center;
+  justify-content:center;
+  padding:10px 26px;
+  border-radius:7px;
+  border:1px solid var(--wine);
+  background:var(--wine);
+  color:var(--ivory);
+  text-decoration:none;
+  font-size:21px;
+  transition:background .2s ease,transform .2s ease;
+}
+.button:hover {background:#58142b}
+.button:active {transform:scale(.98)}
+.contact {
+  background:linear-gradient(var(--ivory),#f0e3d3);
+}
+.contact p {
+  max-width:370px;
+  margin:0 auto 24px;
+  font-size:22px;
+  color:var(--muted);
+}
+footer {
+  padding:28px 24px 40px;
+  text-align:center;
+  background:#f0e3d3;
+  color:var(--muted);
+  border-top:1px solid var(--border);
+}
+footer p {margin:4px 0}
+.date-number {
+  display:inline-block;
+  direction:ltr;
+  unicode-bidi:isolate;
+}
+@media(prefers-reduced-motion:reduce) {
+  html {scroll-behavior:auto}
+  *,*::before,*::after {
+    animation:none!important;
+    transition:none!important;
+  }
+}
+</style>
 </head>
 
 <body>
-  <div class="shell">
+<div class="site">
 
-    <div class="cover" id="cover">
-      <div class="cover-content">
-        <p class="cover-heading">دعوة لحضور حفل زفاف</p>
+  <div class="cover" id="cover">
+    <div class="cover-inner">
+      <p class="small-title">دعوة لحضور حفل زفاف</p>
 
-        <button class="envelope"
-                id="openInvitation"
-                type="button"
-                aria-label="افتح دعوة زفاف موسى بلطرش"
-                aria-controls="invitation"
-                aria-expanded="false">
-          <span class="letter" aria-hidden="true">دعوتكم تشرّفنا</span>
-          <span class="envelope-front" aria-hidden="true"></span>
-          <span class="flap" aria-hidden="true"></span>
-          <span class="seal" aria-hidden="true">م</span>
-        </button>
+      <button class="envelope" id="openButton"
+        type="button"
+        aria-label="افتح دعوة الزفاف"
+        aria-controls="invitation"
+        aria-expanded="false">
+        <span class="letter" aria-hidden="true">دعوتكم تشرّفنا</span>
+        <span class="front" aria-hidden="true"></span>
+        <span class="flap" aria-hidden="true"></span>
+        <span class="seal" aria-hidden="true">م</span>
+      </button>
 
-        <p class="open-label">اضغط على الظرف لفتح الدعوة</p>
-        <p class="cover-date">٢١ نوفمبر ٢٠٢٦</p>
-      </div>
+      <p class="tap-text">اضغط على الظرف لفتح الدعوة</p>
+      <p class="cover-date">
+        <span class="date-number">21</span> نوفمبر
+        <span class="date-number">2026</span>
+      </p>
     </div>
-
-    <main class="invitation" id="invitation" hidden>
-
-      <header class="hero">
-        <p class="basmala">بسم الله الرحمن الرحيم</p>
-        <p class="eyebrow">دعوة زفاف</p>
-        <div class="ornament" aria-hidden="true"></div>
-        <h1 id="invitationTitle" tabindex="-1">موسى بلطرش</h1>
-        <p class="hero-date">٢١ نوفمبر ٢٠٢٦</p>
-        <p class="hero-location">الطاهير، جيجل</p>
-        <p class="scroll-note">مرّر للأسفل للاطّلاع على تفاصيل الدعوة ↓</p>
-      </header>
-
-      <section class="content" aria-labelledby="welcomeTitle">
-        <h2 id="welcomeTitle">بكل الحب والسرور</h2>
-        <p class="intro-text">
-          ندعوكم لمشاركتنا فرحة زفافنا،
-          ومشاركتنا أجمل لحظات العمر.
-        </p>
-        <div class="ornament" aria-hidden="true"></div>
-        <p class="signature">بحضوركم تكتمل فرحتنا</p>
-      </section>
-
-      <section class="content count-section" aria-labelledby="countTitle">
-        <h2 id="countTitle">نعدّ الأيام للقائكم</h2>
-
-        <div class="countdown"
-             id="countdown"
-             role="group"
-             aria-label="الوقت المتبقي حتى تاريخ الزفاف">
-          <div class="count-box">
-            <strong id="days">٠</strong>
-            <span>يوم</span>
-          </div>
-          <div class="count-box">
-            <strong id="hours">٠</strong>
-            <span>ساعة</span>
-          </div>
-          <div class="count-box">
-            <strong id="minutes">٠</strong>
-            <span>دقيقة</span>
-          </div>
-          <div class="count-box">
-            <strong id="seconds">٠</strong>
-            <span>ثانية</span>
-          </div>
-        </div>
-
-        <p id="weddingDay" hidden>حلّ يوم فرحتنا، أهلًا وسهلًا بكم</p>
-      </section>
-
-      <section class="content venue" aria-labelledby="venueTitle">
-        <h2 id="venueTitle">مكان الاحتفال</h2>
-        <p class="venue-name">قاعة الحفلات النخيل</p>
-        <p class="venue-address">الطاهير، جيجل</p>
-
-        <!-- Confirm this is the correct hall before sharing the invitation. -->
-        <a class="button"
-           href="https://maps.app.goo.gl/mv4NyQahhMVdLjQg8"
-           target="_blank"
-           rel="noopener noreferrer">
-          موقع القاعة على الخريطة
-        </a>
-      </section>
-
-      <section class="content contact" aria-labelledby="contactTitle">
-        <h2 id="contactTitle">يسعدنا تواصلكم</h2>
-        <p class="contact-text">
-          للاستفسار عن تفاصيل الحفل، يمكنكم التواصل معنا عبر واتساب.
-        </p>
-
-        <a class="button"
-           href="https://wa.me/4915224843970"
-           target="_blank"
-           rel="noopener noreferrer">
-          للتواصل عبر واتساب
-        </a>
-      </section>
-
-      <footer>
-        <p>موسى بلطرش</p>
-        <p>٢١ نوفمبر ٢٠٢٦</p>
-        <p>بحضوركم تكتمل فرحتنا</p>
-      </footer>
-
-    </main>
   </div>
 
-  <script>
-    const cover = document.getElementById("cover");
-    const openButton = document.getElementById("openInvitation");
-    const invitation = document.getElementById("invitation");
-    const title = document.getElementById("invitationTitle");
+  <main id="invitation" hidden>
 
-    const reducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
+    <header class="hero">
+      <div class="hero-content">
+        <p class="basmala">بسم الله الرحمن الرحيم</p>
+        <p class="eyebrow">دعوة زفاف</p>
+        <h1 id="mainTitle" tabindex="-1">موسى بلطرش</h1>
 
-    let isOpening = false;
+        <p class="date">
+          <span class="date-number">21</span> نوفمبر
+          <span class="date-number">2026</span>
+        </p>
 
-    openButton.addEventListener("click", function () {
-      if (isOpening) return;
-      isOpening = true;
+        <!-- Original faceless bride and groom illustration -->
+        <svg class="couple" viewBox="0 0 400 440"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          aria-labelledby="coupleTitle">
+          <title id="coupleTitle">
+            رسم لعريس ببدلة وعروس بفستان أبيض دون ملامح وجه
+          </title>
 
-      openButton.classList.add("opening");
-      openButton.setAttribute("aria-expanded", "true");
+          <ellipse cx="200" cy="417" rx="145" ry="13"
+            fill="#d6bea1" opacity=".4"/>
 
-      window.setTimeout(function () {
-        cover.classList.add("leaving");
+          <!-- Botanical arch -->
+          <path d="M48 385V190a152 152 0 0 1 304 0v195"
+            fill="none" stroke="#c5a575" stroke-width="2"/>
+          <path d="M59 380V191a141 141 0 0 1 282 0v189"
+            fill="none" stroke="#d9c5a5"/>
 
-        window.setTimeout(function () {
-          cover.hidden = true;
-          invitation.hidden = false;
-          window.scrollTo({ top: 0, behavior: "instant" });
-          title.focus({ preventScroll: true });
-        }, reducedMotion ? 0 : 400);
+          <g fill="#8a9677">
+            <ellipse cx="55" cy="250" rx="8" ry="21"
+              transform="rotate(-35 55 250)"/>
+            <ellipse cx="42" cy="285" rx="8" ry="20"
+              transform="rotate(25 42 285)"/>
+            <ellipse cx="61" cy="320" rx="8" ry="20"
+              transform="rotate(-35 61 320)"/>
+            <ellipse cx="344" cy="240" rx="8" ry="21"
+              transform="rotate(35 344 240)"/>
+            <ellipse cx="357" cy="278" rx="8" ry="20"
+              transform="rotate(-25 357 278)"/>
+            <ellipse cx="340" cy="316" rx="8" ry="20"
+              transform="rotate(35 340 316)"/>
+          </g>
 
-      }, reducedMotion ? 0 : 700);
-    });
+          <g fill="#a64e63">
+            <circle cx="48" cy="220" r="15"/>
+            <circle cx="58" cy="350" r="17"/>
+            <circle cx="350" cy="210" r="17"/>
+          </g>
+          <g fill="#ecd1c6">
+            <circle cx="48" cy="220" r="8"/>
+            <circle cx="58" cy="350" r="9"/>
+            <circle cx="350" cy="210" r="9"/>
+          </g>
 
-    // Countdown targets the start of the date in Algeria.
-    // This is not an announced arrival or ceremony time.
-    const weddingDate = new Date("2026-11-21T00:00:00+01:00").getTime();
-    const weddingDateEnd = new Date("2026-11-22T00:00:00+01:00").getTime();
+          <!-- Groom -->
+          <path d="M109 248h69l10 155h-35l-10-106-5 106h-34z"
+            fill="#242a30"/>
+          <path d="M108 158l35-13 37 15 22 116-31 9-12-75-4 77h-55l3-78-14 70-23-9z"
+            fill="#303940"/>
+          <path d="M128 150l15 41 17-41"
+            fill="#fffaf3"/>
+          <path d="M142 160l-6 9 8 43 8-43-7-9z"
+            fill="#751d39"/>
+          <path d="M126 150l-9 39 23 24-10-40z"
+            fill="#47515a"/>
+          <path d="M160 150l9 39-23 24 10-40z"
+            fill="#47515a"/>
+          <path d="M132 124h24v29c-7 9-17 9-24 0z"
+            fill="#d5ac8b"/>
+          <ellipse cx="144" cy="102" rx="27" ry="34"
+            fill="#ddb799"/>
+          <path d="M117 103c-7-36 13-49 32-45 26 1 29 23 21 42l-6-19c-17 9-29 2-36 8l-4 19z"
+            fill="#3e3028"/>
+          <path d="M104 398h32v15H95q-1-11 9-15M155 398h31l13 15h-44z"
+            fill="#202429"/>
+          <path d="M169 197l-5-10 6-8 7 8-5 11z"
+            fill="#f5e9d6"/>
+          <path d="M168 195l-2 12" stroke="#8a9677" stroke-width="2"/>
 
-    const arabicNumber = new Intl.NumberFormat("ar-DZ-u-nu-arab", {
-      useGrouping: false,
-      minimumIntegerDigits: 2
-    });
+          <!-- Bride veil and hair -->
+          <path d="M228 93q37-48 64 3l26 243-119-2z"
+            fill="#fffdf7" opacity=".78"/>
+          <path d="M229 102q-4-43 30-43 35 0 32 49l-12 50h-43z"
+            fill="#614331"/>
+          <ellipse cx="259" cy="106" rx="25" ry="32"
+            fill="#e7c6ab"/>
+          <path d="M233 99q-4-37 25-37 30 0 28 36-18-6-28-22-7 17-25 23"
+            fill="#614331"/>
+          <path d="M248 130h23v24h-23z" fill="#e0b99a"/>
 
-    function updateCountdown() {
-      const now = Date.now();
-      const remaining = Math.max(0, weddingDate - now);
+          <!-- Bridal gown -->
+          <path d="M235 151l24 10 24-10 10 40-14 36 64 174q-83 29-168 0l65-174-15-36z"
+            fill="#fffdf9" stroke="#d8c9b7" stroke-width="1.5"/>
+          <path d="M235 151q24 25 48 0"
+            fill="none" stroke="#d8c9b7" stroke-width="2"/>
+          <path d="M241 228h37" stroke="#c5a575" stroke-width="3"/>
+          <path d="M248 245l-34 147M266 245l7 156M279 258l38 135"
+            fill="none" stroke="#e6ddd0" stroke-width="2"/>
+          <path d="M235 157l-26 69 18 9 23-58M283 157l20 68-18 9-18-58"
+            fill="#e7c6ab"/>
+          <path d="M224 222l28 17M295 225l-30 14"
+            fill="none" stroke="#e7c6ab" stroke-width="13"
+            stroke-linecap="round"/>
 
-      const values = {
-        days: Math.floor(remaining / 86400000),
-        hours: Math.floor((remaining / 3600000) % 24),
-        minutes: Math.floor((remaining / 60000) % 60),
-        seconds: Math.floor((remaining / 1000) % 60)
-      };
+          <!-- Bouquet -->
+          <path d="M249 238l13 35 9-36"
+            fill="#879274"/>
+          <g fill="#a55368">
+            <circle cx="245" cy="229" r="12"/>
+            <circle cx="269" cy="229" r="12"/>
+            <circle cx="258" cy="217" r="12"/>
+          </g>
+          <g fill="#f3e2d9">
+            <circle cx="258" cy="233" r="12"/>
+            <circle cx="241" cy="217" r="8"/>
+            <circle cx="275" cy="216" r="8"/>
+          </g>
+          <path d="M254 253l-7 28M263 253l12 27"
+            stroke="#c9ab79" stroke-width="3"/>
 
-      Object.keys(values).forEach(function (key) {
-        document.getElementById(key).textContent =
-          arabicNumber.format(values[key]);
-      });
+          <!-- Bridal headpiece -->
+          <path d="M238 79q20-14 41 0"
+            fill="none" stroke="#c5a575" stroke-width="3"/>
+          <g fill="#fffaf3">
+            <circle cx="242" cy="77" r="4"/>
+            <circle cx="253" cy="73" r="4"/>
+            <circle cx="265" cy="74" r="4"/>
+            <circle cx="276" cy="78" r="4"/>
+          </g>
+        </svg>
 
-      if (now >= weddingDate) {
-        document.getElementById("countdown").hidden = true;
-        document.getElementById("weddingDay").hidden = false;
+        <p class="scroll-note">مرّر للأسفل للاطّلاع على تفاصيل الدعوة ↓</p>
+      </div>
+    </header>
 
-        document.getElementById("countTitle").textContent =
-          now < weddingDateEnd ? "اليوم نحتفل بفرحتنا" : "شكرًا لمحبتكم";
+    <section class="section welcome">
+      <h2>بكل الحب والسرور</h2>
+      <p>ندعوكم لمشاركتنا فرحة زفافنا، ومشاركتنا أجمل لحظات العمر.</p>
+      <div class="divider" aria-hidden="true">❦</div>
+      <p class="signature">بحضوركم تكتمل فرحتنا</p>
+    </section>
 
-        document.getElementById("weddingDay").textContent =
-          now < weddingDateEnd
-            ? "حلّ يوم فرحتنا، أهلًا وسهلًا بكم"
-            : "تبقى فرحتنا أجمل بمحبتكم ودعواتكم";
-      }
-    }
+    <section class="section count-section">
+      <h2 id="countTitle">نعدّ الأيام للقائكم</h2>
 
-    updateCountdown();
-    window.setInterval(updateCountdown, 1000);
-  </script>
+      <div class="countdown" id="countdown"
+        role="group" aria-label="الوقت المتبقي حتى تاريخ الزفاف">
+        <div class="count-box">
+          <strong id="days" dir="ltr">00</strong><span>يوم</span>
+        </div>
+        <div class="count-box">
+          <strong id="hours" dir="ltr">00</strong><span>ساعة</span>
+        </div>
+        <div class="count-box">
+          <strong id="minutes" dir="ltr">00</strong><span>دقيقة</span>
+        </div>
+        <div class="count-box">
+          <strong id="seconds" dir="ltr">00</strong><span>ثانية</span>
+        </div>
+      </div>
+
+      <p id="dayMessage" hidden></p>
+    </section>
+
+    <section class="section venue-section">
+      <h2>مكان الاحتفال</h2>
+
+      <div class="venue-card">
+        <div class="venue-photo" id="venuePhoto" aria-hidden="true"></div>
+        <div class="venue-content">
+          <p class="venue-name">قاعة الحفلات النخيل</p>
+          <p class="venue-address">الطاهير، جيجل</p>
+          <a class="button"
+            href="https://maps.app.goo.gl/mv4NyQahhMVdLjQg8"
+            target="_blank" rel="noopener noreferrer">
+            موقع القاعة على الخريطة
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact">
+      <h2>يسعدنا تواصلكم</h2>
+      <p>للاستفسار عن تفاصيل الحفل، يمكنكم التواصل معنا عبر واتساب.</p>
+      <a class="button"
+        href="https://wa.me/4915224843970"
+        target="_blank" rel="noopener noreferrer">
+        للتواصل عبر واتساب
+      </a>
+    </section>
+
+    <footer>
+      <p>موسى بلطرش</p>
+      <p>
+        <span class="date-number">21</span> نوفمبر
+        <span class="date-number">2026</span>
+      </p>
+      <p>بحضوركم تكتمل فرحتنا</p>
+    </footer>
+
+  </main>
+</div>
+
+<script>
+const cover = document.getElementById("cover");
+const openButton = document.getElementById("openButton");
+const invitation = document.getElementById("invitation");
+const reducedMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)"
+).matches;
+
+let opening = false;
+
+openButton.addEventListener("click", function () {
+  if (opening) return;
+  opening = true;
+  openButton.classList.add("opening");
+  openButton.setAttribute("aria-expanded", "true");
+
+  setTimeout(function () {
+    cover.classList.add("leaving");
+
+    setTimeout(function () {
+      cover.hidden = true;
+      invitation.hidden = false;
+      window.scrollTo({top:0, behavior:"instant"});
+      document.getElementById("mainTitle").focus({preventScroll:true});
+    }, reducedMotion ? 0 : 350);
+
+  }, reducedMotion ? 0 : 700);
+});
+
+// Countdown to the start of the wedding date in Algeria.
+// This does not announce an arrival or ceremony time.
+const weddingStart = new Date("2026-11-21T00:00:00+01:00").getTime();
+const weddingEnd = new Date("2026-11-22T00:00:00+01:00").getTime();
+
+const numberFormat = new Intl.NumberFormat("en-GB", {
+  useGrouping:false,
+  minimumIntegerDigits:2
+});
+
+function updateCountdown() {
+  const now = Date.now();
+  const remaining = Math.max(0, weddingStart - now);
+
+  const values = {
+    days:Math.floor(remaining / 86400000),
+    hours:Math.floor(remaining / 3600000) % 24,
+    minutes:Math.floor(remaining / 60000) % 60,
+    seconds:Math.floor(remaining / 1000) % 60
+  };
+
+  Object.entries(values).forEach(function ([id, value]) {
+    document.getElementById(id).textContent = numberFormat.format(value);
+  });
+
+  if (now >= weddingStart) {
+    document.getElementById("countdown").hidden = true;
+    const message = document.getElementById("dayMessage");
+    message.hidden = false;
+
+    document.getElementById("countTitle").textContent =
+      now < weddingEnd ? "اليوم نحتفل بفرحتنا" : "شكرًا لمحبتكم";
+
+    message.textContent =
+      now < weddingEnd
+        ? "حلّ يوم فرحتنا، أهلًا وسهلًا بكم"
+        : "تبقى فرحتنا أجمل بمحبتكم ودعواتكم";
+  }
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+// Optional real venue photo:
+// After uploading a photo to the repository, enter its filename below.
+// For example: const venuePhotoFile = "./venue.jpg";
+const venuePhotoFile = "";
+
+if (venuePhotoFile) {
+  const image = new Image();
+  image.onload = function () {
+    const panel = document.getElementById("venuePhoto");
+    panel.style.backgroundImage = 'url("' + image.src + '")';
+    panel.classList.add("has-photo");
+  };
+  image.src = venuePhotoFile;
+}
+</script>
 </body>
 </html>
