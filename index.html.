@@ -1,0 +1,531 @@
+xml
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#850e32">
+  <meta name="description"
+        content="دعوة زفاف موسى بلطرش — ٢١ نوفمبر ٢٠٢٦ — قاعة الحفلات النخيل، الطاهير، جيجل">
+  <title>دعوة زفاف موسى بلطرش</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+  <style>
+    :root {
+      --wine: #850e32;
+      --wine-deep: #590c25;
+      --cream: #fff8ef;
+      --paper: #f3e6d9;
+      --gold: #cba76a;
+      --ink: #4c2631;
+      --muted: #755c62;
+      --line: #dfc8b4;
+      --body: "Noto Naskh Arabic", serif;
+      --display: "Amiri", serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: #eee4df;
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 18px;
+      line-height: 1.9;
+    }
+
+    button, a { -webkit-tap-highlight-color: transparent; }
+
+    button { font: inherit; }
+
+    button:focus-visible, a:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 6px;
+    }
+
+    [hidden] { display: none !important; }
+
+    .shell {
+      max-width: 600px;
+      min-height: 100svh;
+      margin-inline: auto;
+      background: var(--cream);
+      box-shadow: 0 0 60px #4c263115;
+    }
+
+    /* Opening envelope */
+
+    .cover {
+      min-height: 100svh;
+      padding: 36px 24px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      background: var(--paper);
+      transition: opacity .45s ease, transform .45s ease;
+    }
+
+    .cover.leaving {
+      opacity: 0;
+      transform: scale(1.025);
+      pointer-events: none;
+    }
+
+    .cover-content { width: 100%; }
+
+    .cover-heading {
+      margin: 0 0 28px;
+      font-family: var(--display);
+      font-size: 30px;
+      font-weight: 400;
+    }
+
+    .envelope {
+      position: relative;
+      display: block;
+      width: 100%;
+      max-width: 390px;
+      height: 270px;
+      margin: auto;
+      padding: 0;
+      border: 1px solid #d7bca9;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #e8d5c4;
+      box-shadow: 0 20px 45px #5a263024;
+      perspective: 1000px;
+      isolation: isolate;
+    }
+
+    .letter {
+      position: absolute;
+      inset: 18px;
+      display: grid;
+      place-items: center;
+      background: var(--cream);
+      color: var(--wine);
+      font-family: var(--display);
+      font-size: 30px;
+      transition: transform .7s ease;
+      border: 1px solid var(--line);
+    }
+
+    .envelope-front {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: #eddbca;
+      clip-path: polygon(0 0, 50% 52%, 100% 0, 100% 100%, 0 100%);
+      border-radius: 8px;
+    }
+
+    .flap {
+      position: absolute;
+      inset: 0 0 auto;
+      height: 56%;
+      z-index: 3;
+      background: #f5e6d7;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      transform-origin: top;
+      transition: transform .7s ease;
+      backface-visibility: hidden;
+    }
+
+    .seal {
+      position: absolute;
+      left: 50%;
+      top: 49%;
+      z-index: 4;
+      display: grid;
+      place-items: center;
+      width: 76px;
+      height: 76px;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      border: 5px double #b88b49;
+      background: var(--wine);
+      box-shadow: 0 5px 12px #46122330;
+      color: #f8dfaf;
+      font-family: var(--display);
+      font-size: 36px;
+      transition: opacity .25s ease;
+    }
+
+    .envelope.opening .flap { transform: rotateX(180deg); }
+    .envelope.opening .seal { opacity: 0; }
+    .envelope.opening .letter { transform: translateY(-48px); }
+
+    .open-label { margin: 32px 0 4px; font-size: 22px; }
+    .cover-date { margin: 0; color: var(--muted); }
+
+    /* Invitation */
+
+    .invitation { animation: reveal .7s ease both; }
+
+    @keyframes reveal {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero {
+      min-height: 88svh;
+      display: grid;
+      align-content: center;
+      padding: 72px 28px;
+      text-align: center;
+      background: var(--wine);
+      color: var(--cream);
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 20px;
+      border: 1px solid #cba76a80;
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      margin: 0;
+      color: #efd3a2;
+      font-size: 21px;
+    }
+
+    .basmala {
+      font-family: var(--display);
+      font-size: clamp(25px, 5vw, 34px);
+      margin: 12px 0 32px;
+    }
+
+    .ornament {
+      width: 96px;
+      height: 1px;
+      margin: 28px auto;
+      background: var(--gold);
+    }
+
+    h1 {
+      font-family: var(--display);
+      font-size: clamp(45px, 10vw, 70px);
+      line-height: 1.6;
+      font-weight: 400;
+      margin: 12px 0;
+    }
+
+    .hero-date { margin: 0; font-size: 25px; }
+    .hero-location { margin: 16px 0 0; color: #f1dcd8; }
+    .scroll-note { margin: 36px 0 0; font-size: 16px; color: #efd3a2; }
+
+    section.content {
+      padding: 60px 28px;
+      text-align: center;
+    }
+
+    h2 {
+      margin: 0 0 20px;
+      font-family: var(--display);
+      font-size: clamp(30px, 6vw, 40px);
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    .intro-text {
+      font-size: 25px;
+      max-width: 360px;
+      margin: auto;
+      line-height: 2.1;
+    }
+
+    .signature {
+      color: var(--wine);
+      font-family: var(--display);
+      font-size: 31px;
+      margin: 24px 0 0;
+    }
+
+    .count-section {
+      background: #f0e2d5;
+      border-block: 1px solid var(--line);
+    }
+
+    .countdown {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+      max-width: 420px;
+      margin: 28px auto 0;
+    }
+
+    .count-box {
+      padding: 16px 4px;
+      background: var(--cream);
+      border: 1px solid #e2cdb8;
+      border-radius: 8px;
+    }
+
+    .count-box strong {
+      display: block;
+      color: var(--wine);
+      font-size: clamp(25px, 6vw, 36px);
+      line-height: 1.4;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .count-box span { font-size: 16px; }
+
+    .venue {
+      background: var(--wine);
+      color: var(--cream);
+    }
+
+    .venue h2 { color: #efd3a2; }
+    .venue-name { font-size: 30px; margin: 0; }
+    .venue-address { font-size: 23px; margin: 8px 0 24px; }
+
+    .button {
+      display: inline-flex;
+      min-height: 52px;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 28px;
+      border: 1px solid var(--gold);
+      border-radius: 6px;
+      color: var(--wine-deep);
+      background: #efd7ab;
+      text-decoration: none;
+      font-size: 20px;
+      transition: background .2s ease, transform .2s ease;
+    }
+
+    .button:hover { background: #f9e9cb; }
+    .button:active { transform: scale(.98); }
+
+    .contact-text {
+      max-width: 350px;
+      margin: 0 auto 24px;
+      color: var(--muted);
+      font-size: 21px;
+    }
+
+    .contact .button {
+      background: var(--wine);
+      color: var(--cream);
+      border-color: var(--wine);
+    }
+
+    footer {
+      padding: 28px 24px 40px;
+      text-align: center;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      font-size: 17px;
+    }
+
+    footer p { margin: 4px 0; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="shell">
+
+    <div class="cover" id="cover">
+      <div class="cover-content">
+        <p class="cover-heading">دعوة لحضور حفل زفاف</p>
+
+        <button class="envelope"
+                id="openInvitation"
+                type="button"
+                aria-label="افتح دعوة زفاف موسى بلطرش"
+                aria-controls="invitation"
+                aria-expanded="false">
+          <span class="letter" aria-hidden="true">دعوتكم تشرّفنا</span>
+          <span class="envelope-front" aria-hidden="true"></span>
+          <span class="flap" aria-hidden="true"></span>
+          <span class="seal" aria-hidden="true">م</span>
+        </button>
+
+        <p class="open-label">اضغط على الظرف لفتح الدعوة</p>
+        <p class="cover-date">٢١ نوفمبر ٢٠٢٦</p>
+      </div>
+    </div>
+
+    <main class="invitation" id="invitation" hidden>
+
+      <header class="hero">
+        <p class="basmala">بسم الله الرحمن الرحيم</p>
+        <p class="eyebrow">دعوة زفاف</p>
+        <div class="ornament" aria-hidden="true"></div>
+        <h1 id="invitationTitle" tabindex="-1">موسى بلطرش</h1>
+        <p class="hero-date">٢١ نوفمبر ٢٠٢٦</p>
+        <p class="hero-location">الطاهير، جيجل</p>
+        <p class="scroll-note">مرّر للأسفل للاطّلاع على تفاصيل الدعوة ↓</p>
+      </header>
+
+      <section class="content" aria-labelledby="welcomeTitle">
+        <h2 id="welcomeTitle">بكل الحب والسرور</h2>
+        <p class="intro-text">
+          ندعوكم لمشاركتنا فرحة زفافنا،
+          ومشاركتنا أجمل لحظات العمر.
+        </p>
+        <div class="ornament" aria-hidden="true"></div>
+        <p class="signature">بحضوركم تكتمل فرحتنا</p>
+      </section>
+
+      <section class="content count-section" aria-labelledby="countTitle">
+        <h2 id="countTitle">نعدّ الأيام للقائكم</h2>
+
+        <div class="countdown"
+             id="countdown"
+             role="group"
+             aria-label="الوقت المتبقي حتى تاريخ الزفاف">
+          <div class="count-box">
+            <strong id="days">٠</strong>
+            <span>يوم</span>
+          </div>
+          <div class="count-box">
+            <strong id="hours">٠</strong>
+            <span>ساعة</span>
+          </div>
+          <div class="count-box">
+            <strong id="minutes">٠</strong>
+            <span>دقيقة</span>
+          </div>
+          <div class="count-box">
+            <strong id="seconds">٠</strong>
+            <span>ثانية</span>
+          </div>
+        </div>
+
+        <p id="weddingDay" hidden>حلّ يوم فرحتنا، أهلًا وسهلًا بكم</p>
+      </section>
+
+      <section class="content venue" aria-labelledby="venueTitle">
+        <h2 id="venueTitle">مكان الاحتفال</h2>
+        <p class="venue-name">قاعة الحفلات النخيل</p>
+        <p class="venue-address">الطاهير، جيجل</p>
+
+        <!-- Confirm this is the correct hall before sharing the invitation. -->
+        <a class="button"
+           href="https://maps.app.goo.gl/mv4NyQahhMVdLjQg8"
+           target="_blank"
+           rel="noopener noreferrer">
+          موقع القاعة على الخريطة
+        </a>
+      </section>
+
+      <section class="content contact" aria-labelledby="contactTitle">
+        <h2 id="contactTitle">يسعدنا تواصلكم</h2>
+        <p class="contact-text">
+          للاستفسار عن تفاصيل الحفل، يمكنكم التواصل معنا عبر واتساب.
+        </p>
+
+        <a class="button"
+           href="https://wa.me/4915224843970"
+           target="_blank"
+           rel="noopener noreferrer">
+          للتواصل عبر واتساب
+        </a>
+      </section>
+
+      <footer>
+        <p>موسى بلطرش</p>
+        <p>٢١ نوفمبر ٢٠٢٦</p>
+        <p>بحضوركم تكتمل فرحتنا</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <script>
+    const cover = document.getElementById("cover");
+    const openButton = document.getElementById("openInvitation");
+    const invitation = document.getElementById("invitation");
+    const title = document.getElementById("invitationTitle");
+
+    const reducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    let isOpening = false;
+
+    openButton.addEventListener("click", function () {
+      if (isOpening) return;
+      isOpening = true;
+
+      openButton.classList.add("opening");
+      openButton.setAttribute("aria-expanded", "true");
+
+      window.setTimeout(function () {
+        cover.classList.add("leaving");
+
+        window.setTimeout(function () {
+          cover.hidden = true;
+          invitation.hidden = false;
+          window.scrollTo({ top: 0, behavior: "instant" });
+          title.focus({ preventScroll: true });
+        }, reducedMotion ? 0 : 400);
+
+      }, reducedMotion ? 0 : 700);
+    });
+
+    // Countdown targets the start of the date in Algeria.
+    // This is not an announced arrival or ceremony time.
+    const weddingDate = new Date("2026-11-21T00:00:00+01:00").getTime();
+    const weddingDateEnd = new Date("2026-11-22T00:00:00+01:00").getTime();
+
+    const arabicNumber = new Intl.NumberFormat("ar-DZ-u-nu-arab", {
+      useGrouping: false,
+      minimumIntegerDigits: 2
+    });
+
+    function updateCountdown() {
+      const now = Date.now();
+      const remaining = Math.max(0, weddingDate - now);
+
+      const values = {
+        days: Math.floor(remaining / 86400000),
+        hours: Math.floor((remaining / 3600000) % 24),
+        minutes: Math.floor((remaining / 60000) % 60),
+        seconds: Math.floor((remaining / 1000) % 60)
+      };
+
+      Object.keys(values).forEach(function (key) {
+        document.getElementById(key).textContent =
+          arabicNumber.format(values[key]);
+      });
+
+      if (now >= weddingDate) {
+        document.getElementById("countdown").hidden = true;
+        document.getElementById("weddingDay").hidden = false;
+
+        document.getElementById("countTitle").textContent =
+          now < weddingDateEnd ? "اليوم نحتفل بفرحتنا" : "شكرًا لمحبتكم";
+
+        document.getElementById("weddingDay").textContent =
+          now < weddingDateEnd
+            ? "حلّ يوم فرحتنا، أهلًا وسهلًا بكم"
+            : "تبقى فرحتنا أجمل بمحبتكم ودعواتكم";
+      }
+    }
+
+    updateCountdown();
+    window.setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
